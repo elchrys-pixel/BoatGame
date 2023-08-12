@@ -50,7 +50,7 @@ var shipType = {
     Brig: {
         img: [657,41,83,68],
         cost: 80,
-        motorSpeed: 0,
+        motorSpeed: 1,
         turnSpeed: 0.003,
         windDrift: 0.02,
         sailSpeed: 0.3,
@@ -145,6 +145,18 @@ var shipType = {
         cargoCapacity: 4,
         stealth: true
     },
+    Turbo: {
+        img: [994,247,114,46],
+        cost: 250,
+        motorSpeed: 0.3,
+        turnSpeed: 0.003,
+        windDrift: 0.05,
+        sailSpeed: 0,
+        maxTackStrength: 0,
+        bestTackAngle: 0,
+        maxTackAngle: 0,
+        cargoCapacity: 4,
+    },
 };
 
 
@@ -172,12 +184,12 @@ var map = mapData;
 map.ports = portsData;
 map.ships = [
     {
-        type: "Brig",
+        type: "Turbo",
         x: 50,
         y: 70,
         angle: 0,
         cargo: ["Lumber"],
-        money: 12
+        money: 12,
     }
 ];
 map.time = 0;
@@ -333,7 +345,7 @@ function tick(ms) {
         }
     });
     map.things.forEach(t => {
-        if (t[1] + scrollX < canvas.width && t[2] + scrollY < canvas.height && t[1] + scrollX + mapThings[t[0]][2] > 0 && t[2] + scrollY + mapThings[t[0]][3] > 0) {
+        if (t[1] + scrollX < canvas.width/scale && t[2] + scrollY < canvas.height/scale && t[1] + scrollX + mapThings[t[0]][2] > 0 && t[2] + scrollY + mapThings[t[0]][3] > 0) {
             blit(mapThings[t[0]], t[1] + scrollX, t[2] + scrollY);
         }
     });

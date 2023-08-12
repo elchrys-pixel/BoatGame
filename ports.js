@@ -45,11 +45,11 @@ var portsData = [
     {
         "name": "Lophophora",
         "desc": "The Great Greenhouse is the true wonder of our age.",
-        "goods": [["Lumber", 20], ["Herbs", 10]],
+        "goods": [["Lumber", 20], ["Herbs", 10], ["Fish", 4]],
         "ship": "Galleon",
         "unlock": "Lumber",
         "unlockDesc": "Contribute to the Work",
-        "shape": [[2463,1502],[2597,1510],[2637,1564],[2597,1668],[2459,1592]]
+        "shape": [[2463,1502],[2597,1510],[2637,1564],[2597,1668],[2459,1592],[678, 288]]
     },
     {
         "name": "Nielsen's Anchor",
@@ -74,7 +74,7 @@ var portsData = [
     {
         "name": "Melliflox",
         "desc": "The factory owner stays well away from the smoke stacks.",
-        "goods": [["Food", 10], ["Ore", 10], ["Tools", 8]],
+        "goods": [["Food", 10], ["Ore", 10], ["Tools", 8], ["Fish", 4]],
         "ship": "Submarine",
         "shape": [[-1382,368],[-1182,438],[-1148,350],[-1350,268]]
     },
@@ -88,7 +88,7 @@ var portsData = [
     {
         "name": "Republic of Angles",
         "desc": "The republic does not like outsiders, but they do like their goods",
-        "goods": [["Lumber", 5], ["Herbs", 20], ["Medicine", 30], ["Drugs", 180]],
+        "goods": [["Lumber", 5], ["Herbs", 20], ["Medicine", 30], ["Drugs", 180], ["Fish", 4]],
         "unlock": "Herbs",
         "unlockDesc": "Bribe the harbormaster",
         "ship": "Dhow",
@@ -100,5 +100,13 @@ var portsData = [
         "goods": [["Food", 5], ["Lumber", 3], ["Medicine", 60], ["Artefacts", 130]],
         "ship": "Galleon",
         "shape": [[-146,1232],[60,1242],[44,1374],[-130,1310]]
+    },
+    {
+        "name": "Winterisle",
+        "desc": "A model society, they claim.",
+        "goods": [["Food", 5], ["Lumber", 3], ["Medicine", 60], ["Artefacts", 130]],
+        "ship": "Galleon",
+        "shape": [[2078,658],[2106,632],[2162,630],[2184,682],[2132,700],[2066,690]]
     }
+   
 ];
